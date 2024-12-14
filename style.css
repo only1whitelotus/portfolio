@@ -59,6 +59,15 @@ section {
     margin: 0 0 0.5rem;
 }
 
+.profile-picture {
+    display: block;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    margin: 0 auto 1rem; /* Center-aligns and adds spacing */
+    border: 3px solid #333; /* Optional: Add a border */
+}
+
 footer {
     background: #333;
     color: #fff;
