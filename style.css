@@ -135,7 +135,7 @@ h2 {
 }
 
 .grid-item img {
-    max-width: 100px; /* Increase size of icons to double */
+    max-width: 200px; /* Increase size of icons to double */
     margin-bottom: 0.5rem;
 }
 
