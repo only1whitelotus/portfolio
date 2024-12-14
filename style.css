@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles (unchanged) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background: #254f91;
+    background: #050a30;
     color: #f2f6f9;
 }
 
@@ -44,9 +44,9 @@ nav ul li a {
 /* About Section */
 .profile-picture {
     display: block;
-    max-width: 150px;
+    max-width: 250px; /* Default size for larger screens */
     margin: 1rem auto;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 3px solid #57adff;
 }
 
@@ -55,7 +55,6 @@ nav ul li a {
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
-    flex-wrap: wrap;
 }
 
 .button {
@@ -78,7 +77,7 @@ nav ul li a {
 }
 
 .value-box {
-    background: #254f91;
+    background: #05144b;
     color: #f2f6f9;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -99,8 +98,8 @@ nav ul li a {
 
 .grid-item {
     text-align: center;
-    background: #57adff;
-    color: #050a30;
+    background: #0d2e62;
+    color: #57adff;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -135,14 +134,18 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: nowrap; /* Prevent stacking vertically */
+        justify-content: center;
     }
 
     /* About Section */
     .buttons {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-wrap: nowrap; /* Maintain horizontal stack */
+    }
+
+    .profile-picture {
+        max-width: 80%; /* Scale the picture for smaller screens */
+        height: auto; /* Prevent stretching */
     }
 
     /* Skills & Services */
@@ -161,6 +164,10 @@ footer {
         width: 95%;
     }
 
+    nav ul {
+        justify-content: space-around; /* Maintain a balanced horizontal stack */
+    }
+
     .grid {
         grid-template-columns: 1fr;
         gap: 0.5rem;
@@ -174,11 +181,11 @@ footer {
         padding: 0.8rem;
     }
 
-    nav ul li {
-        margin: 0.3rem;
+    .buttons {
+        justify-content: space-around; /* Keep buttons horizontally aligned */
     }
 
     .profile-picture {
-        max-width: 120px;
+        max-width: 90%; /* Fit screen while preserving aspect ratio */
     }
 }
