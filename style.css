@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background: #0342c3;
+    background: #254f91;
     color: #f2f6f9;
 }
 
@@ -28,10 +28,11 @@ nav ul {
     justify-content: center;
     background: #254f91;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem;
 }
 
 nav ul li a {
@@ -45,7 +46,7 @@ nav ul li a {
     display: block;
     max-width: 150px;
     margin: 1rem auto;
-    border-radius: 5%;
+    border-radius: 50%;
     border: 3px solid #57adff;
 }
 
@@ -54,6 +55,7 @@ nav ul li a {
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -125,3 +127,58 @@ footer {
     color: #f2f6f9;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust header */
+    header {
+        padding: 1.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* About Section */
+    .buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Skills & Services */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce paddings and margins for smaller screens */
+    header {
+        padding: 1rem 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .grid-item {
+        padding: 0.8rem;
+    }
+
+    .value-box {
+        padding: 0.8rem;
+    }
+
+    nav ul li {
+        margin: 0.3rem;
+    }
+
+    .profile-picture {
+        max-width: 120px;
+    }
+}
