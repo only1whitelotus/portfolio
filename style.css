@@ -22,23 +22,45 @@ header {
     color: #f2f6f9;
 }
 
+nav {
+    position: relative;
+}
+
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    display: none; /* Hide the navigation bar by default */
+    flex-direction: column;
     background: #254f91;
     padding: 1rem;
-    flex-wrap: wrap;
+    margin: 0;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+nav ul.active {
+    display: flex; /* Show the nav when active */
 }
 
 nav ul li {
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 nav ul li a {
     color: #f2f6f9;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #57adff;
 }
 
 /* About Section */
@@ -69,6 +91,13 @@ nav ul li a {
 .button:hover {
     background: #0342c3;
     color: #f2f6f9;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    color: #57adff;
+    margin-bottom: 1rem;
 }
 
 /* Design Values */
@@ -106,7 +135,7 @@ nav ul li a {
 }
 
 .grid-item img {
-    max-width: 50px;
+    max-width: 100px; /* Increase size of icons to double */
     margin-bottom: 0.5rem;
 }
 
@@ -129,19 +158,8 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    /* Adjust header */
     header {
         padding: 1.5rem 0;
-    }
-
-    nav ul {
-        flex-wrap: nowrap; /* Prevent stacking vertically */
-        justify-content: center;
-    }
-
-    /* About Section */
-    .buttons {
-        flex-wrap: nowrap; /* Maintain horizontal stack */
     }
 
     .profile-picture {
@@ -149,24 +167,22 @@ footer {
         height: auto; /* Prevent stretching */
     }
 
-    /* Skills & Services */
     .grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
-    /* Reduce paddings and margins for smaller screens */
     header {
         padding: 1rem 0;
     }
 
     .container {
         width: 95%;
-    }
-
-    nav ul {
-        justify-content: space-around; /* Maintain a balanced horizontal stack */
     }
 
     .grid {
@@ -180,10 +196,6 @@ footer {
 
     .value-box {
         padding: 0.8rem;
-    }
-
-    .buttons {
-        justify-content: space-around; /* Keep buttons horizontally aligned */
     }
 
     .profile-picture {
