@@ -1,7 +1,7 @@
 /* General Styles (unchanged) */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 4rem;
     padding: 0;
     background-color: #050a30;
     color: #f2f6f9;
@@ -90,7 +90,7 @@ nav ul li a {
 }
 
 .button:hover {
-    background: #f2f6f9;
+    background: #57adff;
     color: #f2f6f9;
 }
 
