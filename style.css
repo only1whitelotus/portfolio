@@ -84,13 +84,13 @@ nav ul li a {
     color: #f2f6f9;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 3px solid #57adff;
     font-weight: bold;
 }
 
 .button:hover {
-    background: #0342c3;
+    background: #f2f6f9;
     color: #f2f6f9;
 }
 
@@ -109,7 +109,7 @@ h2 {
 .value-box {
     background: #05144b;
     color: #f2f6f9;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: 0.5rem 0;
     border-radius: 15px;
     text-align: center;
