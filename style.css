@@ -110,7 +110,7 @@ h4 {
     text-align: center;
     color: #f2f6f9;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
@@ -123,7 +123,7 @@ h4 {
     background: #05144b;
     color: #f2f6f9;
     padding: 1rem 2rem;
-    margin: 0.5rem 0;
+    margin: 1rem;
     border-radius: 15px;
     text-align: center;
 }
