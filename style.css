@@ -19,7 +19,7 @@ header {
     text-align: center;
     padding: 2rem 0;
     background: #050a30;
-    color: #f2f6f9;
+    color: #57adff;
 }
 
 nav {
@@ -97,6 +97,11 @@ nav ul li a {
 /* Section Titles */
 h2 {
     text-align: center;
+    color: #57adff;
+    margin-bottom: 1rem;
+}
+h3 {
+    text-align: left;
     color: #57adff;
     margin-bottom: 1rem;
 }
