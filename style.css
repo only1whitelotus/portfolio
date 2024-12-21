@@ -139,12 +139,11 @@ h4 {
     gap: 1rem;
 }
 
-}
 .grid-item {
     text-align: center;
     background: #050a30;
     color: #57adff;
-    padding: 1rem; /* Reduce padding */
+    padding: 0.5rem; /* Reduce padding */
     border-radius: 10px; /* Adjust the corner radius */
     border: 3px solid #57adff;
 }
