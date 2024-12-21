@@ -139,17 +139,19 @@ h4 {
     gap: 1rem;
 }
 
+}
 .grid-item {
     text-align: center;
     background: #050a30;
     color: #57adff;
-    padding: 1rem;
-    border-radius: 15px;
+    padding: 0.5rem; /* Reduce padding */
+    border-radius: 10px; /* Adjust the corner radius */
     border: 3px solid #57adff;
+    font-size: 0.9rem; /* Decrease font size */
 }
 
 .grid-item img {
-    max-width: 200px; /* Increase size of icons to double */
+    max-width: 150px; /* Reduce icon size */
     margin-bottom: 0.5rem;
 }
 
