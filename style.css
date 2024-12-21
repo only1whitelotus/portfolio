@@ -103,7 +103,13 @@ h2 {
 h3 {
     text-align: left;
     color: #57adff;
-    margin-top: 0
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+h4 {
+    text-align: center;
+    color: #f2f6f9;
+    font-weight: bold;
     margin-bottom: 2rem;
 }
 
