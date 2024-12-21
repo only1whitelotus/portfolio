@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: #050a30;
     color: #f2f6f9;
     line-height: 1.6;
@@ -103,7 +103,8 @@ h2 {
 h3 {
     text-align: left;
     color: #57adff;
-    margin-bottom: 1rem;
+    margin-top: 0
+    margin-bottom: 2rem;
 }
 
 /* Design Values */
