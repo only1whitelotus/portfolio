@@ -143,7 +143,7 @@ h4 {
     text-align: center;
     background: #050a30;
     color: #57adff;
-    padding: 0.5rem; /* Reduce padding */
+    padding: 1rem 3rem; /* Reduce padding */
     border-radius: 10px; /* Adjust the corner radius */
     border: 3px solid #57adff;
 }
