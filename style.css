@@ -192,6 +192,26 @@ footer {
     }
 }
 
+@media (min-width: 1024px) {
+    #about .container {
+        display: flex;
+        align-items: center; /* Vertically align content */
+        justify-content: space-between; /* Add space between the image and text */
+    }
+
+    #about .profile-picture {
+        max-width: 300px; /* Adjust size for larger screens */
+        margin: 0; /* Remove the auto margin that centers it */
+        flex-shrink: 0; /* Prevent the image from shrinking */
+    }
+
+    #about .text-content {
+        flex: 1; /* Allow the text content to take up available space */
+        margin-left: 2rem; /* Add spacing between the picture and text */
+    }
+}
+
+
 @media (max-width: 480px) {
     header {
         padding: 1rem 0;
