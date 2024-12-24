@@ -68,7 +68,6 @@ nav ul li a {
     display: block;
     max-width: 100%;
     margin: 1rem auto;
-    border-radius: 5px;
 }
 .buttons {
     display: flex;
@@ -143,18 +142,6 @@ footer {
     }
 }
 
-@media (min-width: 1024px) {
-    #about .container {
-        display: flex;
-        align-items: center; /* Vertically align content */
-        justify-content: space-between; /* Add space between the image and text */
-    }
-
-    #about .text-content {
-        flex: 1; /* Allow the text content to take up available space */
-        margin-left: 2rem; /* Add spacing between the picture and text */
-    }
-}
 
 
 @media (max-width: 480px) {
