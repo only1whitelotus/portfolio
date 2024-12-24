@@ -64,14 +64,12 @@ nav ul li a {
 }
 
 /* About Section */
-.profile-picture {
+.bio-image {
     display: block;
-    max-width: 250px; /* Default size for larger screens */
+    max-width: 100%;
     margin: 1rem auto;
-    border-radius: 10%;
-    border: 3px solid #57adff;
+    border-radius: 5px;
 }
-
 .buttons {
     display: flex;
     justify-content: center;
@@ -100,57 +98,21 @@ h2 {
     color: #57adff;
     margin-bottom: 1rem;
 }
-h3 {
-    text-align: left;
-    color: #57adff;
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-h4 {
-    text-align: center;
-    color: #f2f6f9;
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-}
 
 /* Design Values */
-.design-values {
-    margin: 2rem 0;
+.design-values-image {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 5px;
 }
 
-.value-box {
-    background: #05144b;
-    color: #f2f6f9;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    border-radius: 15px;
-    text-align: center;
-}
-
-/* Skills & Services */
-.skills-services {
-    margin: 2rem 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-
-.grid-item {
-    text-align: center;
-    background: #050a30;
-    color: #57adff;
-    padding: 1rem 3rem; /* Reduce padding */
-    border-radius: 10px; /* Adjust the corner radius */
-    border: 3px solid #57adff;
-}
-
-.grid-item img {
-    max-width: 150px; /* Reduce icon size */
-    margin-bottom: 0.5rem;
+/* Skills & services*/
+.skills-services-image {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 5px;
 }
 
 /* Software Section */
@@ -175,16 +137,7 @@ footer {
     header {
         padding: 1.5rem 0;
     }
-
-    .profile-picture {
-        max-width: 80%; /* Scale the picture for smaller screens */
-        height: auto; /* Prevent stretching */
-    }
-
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    
     .menu-toggle {
         display: block; /* Show menu toggle for smaller screens */
     }
@@ -195,12 +148,6 @@ footer {
         display: flex;
         align-items: center; /* Vertically align content */
         justify-content: space-between; /* Add space between the image and text */
-    }
-
-    #about .profile-picture {
-        max-width: 300px; /* Adjust size for larger screens */
-        margin: 0; /* Remove the auto margin that centers it */
-        flex-shrink: 0; /* Prevent the image from shrinking */
     }
 
     #about .text-content {
@@ -217,22 +164,5 @@ footer {
 
     .container {
         width: 90%;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-    }
-
-    .grid-item {
-        padding: 0.8rem;
-    }
-
-    .value-box {
-        padding: 0.8rem;
-    }
-
-    .profile-picture {
-        max-width: 90%; /* Fit screen while preserving aspect ratio */
     }
 }
