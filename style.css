@@ -141,8 +141,6 @@ footer {
     }
 }
 
-
-
 @media (max-width: 480px) {
     header {
         padding: 1rem 0;
@@ -150,5 +148,22 @@ footer {
 
     .container {
         width: 90%;
+    }
+}
+@media (min-width: 1024px) {
+    .bio-image {
+        float: left;
+        width: 40%;
+    }
+
+    .buttons, .design-values, .skills-services, .software {
+        float: right;
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
     }
 }
