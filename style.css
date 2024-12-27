@@ -193,14 +193,14 @@ footer {
     }
 }
 @media (min-width: 1024px) {
-    .bio-image {
+    .bio-image, .buttons, .software {
         float: left;
-        width: 40%;
+        width: 50%;
     }
 
     .design-values, .skills-services, {
         float: right;
-        width: 55%;
+        width: 50%;
     }
 }
 
