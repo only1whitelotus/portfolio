@@ -198,7 +198,7 @@ footer {
         width: 40%;
     }
 
-    .buttons, .design-values, .skills-services, .software {
+    .design-values, .skills-services, {
         float: right;
         width: 55%;
     }
