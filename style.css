@@ -87,9 +87,6 @@ nav ul li a {
     border-radius: 10px;
     border: 3px solid #57adff;
     font-weight: bold;
-}
-/* Add smooth hover and click effects */
-.button {
     transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -117,7 +114,7 @@ h2 {
     border-radius: 5px;
 }
 
-/* Skills & services*/
+/* Skills & Services */
 .skills-services-image {
     display: block;
     max-width: 100%;
@@ -132,6 +129,7 @@ h2 {
     margin: 1rem auto;
     border-radius: 5px;
 }
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
@@ -179,7 +177,11 @@ footer {
     }
     
     .menu-toggle {
-        display: block; /* Show menu toggle for smaller screens */
+        display: flex; /* Show menu toggle for smaller screens */
+    }
+    
+    nav ul {
+        flex-direction: column;
     }
 }
 
@@ -192,20 +194,20 @@ footer {
         width: 90%;
     }
 }
+
 @media (min-width: 1024px) {
-    .bio-image, .buttons, .software {
+    .bio-image {
         float: left;
         width: 50%;
     }
 
-    .design-values, .skills-services, {
-        float: right;
+    .buttons, .software {
+        float: left;
         width: 50%;
     }
-}
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    .design-values, .skills-services {
+        float: right;
+        width: 50%;
     }
 }
